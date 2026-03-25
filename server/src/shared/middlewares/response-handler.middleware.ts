@@ -6,8 +6,7 @@ export function responseHandler(
   next: NextFunction
 ): void {
   if (!req.response) {
-    next();
-    return;
+    throw new Error("Response not set");
   }
 
   const { statusCode = 200, message, data } = req.response;
