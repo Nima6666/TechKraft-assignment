@@ -1,0 +1,173 @@
+{
+  "agents": {
+    "firstNames": [
+      "Aarav",
+      "Ishan",
+      "Kabir",
+      "Rohan",
+      "Nisha",
+      "Priya",
+      "Saanvi",
+      "Maya",
+      "Anita",
+      "Ritika",
+      "Ava",
+      "Noah",
+      "Liam",
+      "Olivia",
+      "Emma"
+    ],
+    "lastNames": [
+      "Sharma",
+      "Khanal",
+      "Shrestha",
+      "Gurung",
+      "Thapa",
+      "Adhikari",
+      "Basnet",
+      "Rai",
+      "Pandey",
+      "Maharjan",
+      "Carter",
+      "Wilson"
+    ],
+    "emailDomains": [
+      "techcraftrealty.com",
+      "homesnepal.com",
+      "citynest.com"
+    ],
+    "phonePrefixes": [
+      "+977-98",
+      "+977-97",
+      "+1-202"
+    ]
+  },
+  "properties": {
+    "titlePrefixes": [
+      "Modern",
+      "Spacious",
+      "Cozy",
+      "Luxury",
+      "Premium",
+      "Bright",
+      "Elegant",
+      "Family"
+    ],
+    "titleTypesByPropertyType": {
+      "HOUSE": [
+        "House",
+        "Villa",
+        "Bungalow",
+        "Townhouse",
+        "Family Home",
+        "Duplex"
+      ],
+      "LAND": [
+        "Land Parcel",
+        "Corner Plot",
+        "Residential Plot",
+        "Agricultural Plot",
+        "Building Plot"
+      ]
+    },
+    "descriptionSnippets": [
+      "close to schools and supermarkets",
+      "great natural light and ventilation",
+      "easy access to public transportation",
+      "quiet neighborhood with wide roads",
+      "ideal for families and long-term living",
+      "high rental demand in this area",
+      "newly upgraded interiors and fittings"
+    ],
+    "internalNotes": [
+      "Confidential: seller is open to negotiation for qualified buyers only.",
+      "Internal use only: legal document verification is in progress.",
+      "Restricted: off-market outreach approved for priority clients.",
+      "Confidential memo: do not disclose owner relocation timeline.",
+      "Private note: pricing floor approved by owner representative.",
+      "Internal advisory: tenant background review required before closing."
+    ],
+    "cities": [
+      "Kathmandu",
+      "Lalitpur",
+      "Bhaktapur",
+      "Pokhara",
+      "Chitwan"
+    ],
+    "suburbsByCity": {
+      "Kathmandu": [
+        "Budhanilkantha",
+        "Kapan",
+        "Tokha",
+        "Sitapaila",
+        "Jorpati",
+        "Soyambhunath",
+        "Boudhanath",
+        "Chabahil",
+        "Gaushala",
+        "Sankhamul",
+        "Baneshwor",
+        "Thapathali"
+      ],
+      "Bhaktapur": [
+        "Lokanthali",
+        "Kaushaltar",
+        "Gaththaghar",
+        "Balkot",
+        "Dadhikot",
+        "Sirutar",
+        "Duwakot",
+        "Bode",
+        "Sallaghari",
+        "Srijananagar",
+        "Jhaukhel"
+      ],
+      "Lalitpur": [
+        "Sanepa",
+        "Jhamsikhel",
+        "Bhaisepati",
+        "Satdobato",
+        "Lubhu",
+        "Imadol",
+        "Godawari",
+        "Mahalaxmisthan"
+      ],
+      "Pokhara": [
+        "Lakeside",
+        "Hemja",
+        "Lamachaur",
+        "Birauta",
+        "Matepani",
+        "Kundahar",
+        "Lekhnath",
+        "Sishuwa",
+        "Gagangauda",
+        "Batulechaur",
+        "Sarangkot"
+      ],
+      "Chitwan": [
+        "Kshetrapur",
+        "Sauraha",
+        "Parsa",
+        "Khairahani",
+        "Jagatpur",
+        "Gaindakot",
+        "Tandi",
+        "Gitanagar",
+        "Patihani",
+        "Sharadanagar"
+      ]
+    },
+    "propertyTypes": [
+      "HOUSE",
+      "LAND"
+    ],
+    "areaUnits": [
+      "SQFT",
+      "SQM",
+      "ROPANI",
+      "AANA",
+      "BIGHA"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Agent {
+  id         String     @id @default(cuid())
+  name       String
+  email      String     @unique
+  phone      String?
+  properties Property[]
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+}
+
+model Property {
+  id            String        @id @default(cuid())
+  title         String
+  description   String?
+  price         Decimal       @db.Decimal(14, 2)
+  propertyType  PropertyType
+  suburb        String?
+  city          String
+  rooms         Int?
+  areaValue     Float?
+  areaUnit      AreaUnit?
+  // for search and sorting
+  areaSqft      Decimal?      @db.Decimal(14, 4)
+  floorArea     Float?
+  internalNotes String?
+  agentId       String
+  agent         Agent         @relation(fields: [agentId], references: [id])
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@index([propertyType])
+  @@index([city, propertyType, price])
+  @@index([areaSqft])
+  @@index([city, propertyType, areaSqft])
+  @@index([agentId])
+}
+
+enum PropertyType {
+  HOUSE
+  LAND
+}
+
+enum AreaUnit {
+  SQFT
+  SQM
+  ROPANI
+  AANA
+  BIGHA
+}

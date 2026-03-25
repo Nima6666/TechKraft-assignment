@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap");
+@import "tailwindcss";
+
+/* Single light theme — avoids OS dark mode clashing with design */
+html {
+  color-scheme: light;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-headline: var(--font-manrope);
+
+  /* Material-style palette from design */
+  --color-background: #f8f9fa;
+  --color-on-surface: #191c1d;
+  --color-on-surface-variant: #40484c;
+  --color-primary: #004253;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #005b71;
+  --color-on-primary-container: #8ed1ea;
+  --color-surface-container: #edeeef;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #e7e8e9;
+  --color-outline-variant: #bfc8cc;
+  --color-surface: #f8f9fa;
+  --color-surface-tint: #19667d;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+body {
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-headline {
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+}
